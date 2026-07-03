@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Currency Support</title>
+  <style>:root {
+  color-scheme: light dark;
+  --background: #0b0b0c;
+  --surface: #171719;
+  --text: #f6f6f7;
+  --muted: #b3b3b8;
+  --line: #2b2b2e;
+  --accent: #ffd60a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  line-height: 1.55;
+}
+
+a {
+  color: var(--accent);
+}
+
+.page {
+  width: min(760px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 40px 0 56px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  color: var(--muted);
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.panel {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  padding: 28px;
+}
+
+h1,
+h2 {
+  line-height: 1.15;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: clamp(2rem, 7vw, 3.5rem);
+}
+
+h2 {
+  margin-top: 32px;
+  font-size: 1.35rem;
+}
+
+p,
+li {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+code {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 0.1em 0.35em;
+}
+
+.links {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.links a {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px 18px;
+  background: var(--surface);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: 32px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #f7f7f8;
+    --surface: #ffffff;
+    --text: #111113;
+    --muted: #55555c;
+    --line: #d8d8de;
+    --accent: #8a6b00;
+  }
+}</style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav" aria-label="Smart Currency pages">
+      <a href="../">Smart Currency</a>
+      <span>
+        <a href="../support/">Support</a>
+        &nbsp;/&nbsp;
+        <a href="../privacy/">Privacy</a>
+      </span>
+    </nav>
+    <section class="panel">
+<h1>Smart Currency Support</h1>
+<p>Last updated: July 3, 2026</p>
+<p>Smart Currency is a focused iPhone exchange-rate utility for quick fiat and top-crypto conversions with source freshness and local widgets.</p>
+<h2>What The App Does</h2>
+<ul>
+<li>Converts one base amount into multiple target currencies.</li>
+<li>Shows fiat and top-crypto reference rates from public sources.</li>
+<li>Keeps saved conversion state locally on device.</li>
+<li>Preserves cached rates for offline or degraded provider states.</li>
+<li>Mirrors saved state into WidgetKit widgets.</li>
+</ul>
+<h2>What The App Does Not Do</h2>
+<ul>
+<li>No wallet, custody, deposits, withdrawals, or payments.</li>
+<li>No trading, order placement, brokerage, tax, or portfolio PnL workflow.</li>
+<li>No financial advice.</li>
+<li>No accounts, advertising, analytics, tracking, or social feed.</li>
+</ul>
+<h2>Rate Sources</h2>
+<p>Current public sources are European Central Bank, Frankfurter, and CoinGecko. Rates may be delayed, unavailable, stale, or temporarily rate-limited by providers. The app displays source/freshness state and keeps last-known local cached rates when a provider is unavailable.</p>
+<h2>Troubleshooting</h2>
+<p>If rates do not update immediately:</p>
+<ol>
+<li>Check your network connection.</li>
+<li>Wait for the refresh cadence: fiat rates refresh at most every 5 minutes (<code>At most every 5 minutes</code>), and crypto rates refresh at most every 10 minutes (<code>At most every 10 minutes</code>).</li>
+<li>Reopen the app if iOS paused background activity.</li>
+<li>If widgets appear stale, open the main app once so it can refresh and save the latest local snapshot.</li>
+</ol>
+<h2>Contact</h2>
+<p>Production support page: https://ultradeepautomation.github.io/smart-currency-pages/support/</p>
+<p>Use this URL in App Store Connect for the Smart Currency support link. For user-specific support, include the app version, iOS version, device model, the currencies involved, and whether the issue happened online, offline, or after reopening the app.</p>
+    </section>
+    <footer class="footer">Content source: Docs/AppStoreSupport.md.</footer>
+  </main>
+</body>
+</html>
